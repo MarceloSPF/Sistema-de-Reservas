@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
             scanf(" %c", &tipo_passagem);
             if (tipo_passagem != 'E' && tipo_passagem != 'X')
                 printf("\nTipo de passagem inválido. Tente novamente.\n");
-        } while (tipo_passagem != 'E' && tipo_passagem != 'X'); 
+        } while (tipo_passagem != 'E' && tipo_passagem != 'X'); //Verifica se usuario digitou um tipo valido de passagem
 
         while (true) {
             printf("\nDigite a fileira (1-10): ");
@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
                 continue;
             }
 
-            switch (poltrona) {
+            switch (poltrona) { //Caso o usuario digite minusculo ou maiusculo o case sera aplicado da mesma forma
                 case 'A':
                 case 'a':
                     assento = 0;
